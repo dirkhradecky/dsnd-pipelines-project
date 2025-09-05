@@ -1,4 +1,4 @@
-# Project Title
+# Fashion Forward Forecasting
 
 In this project a machine learning model will analyze several data of a purchase (for example text of the review, customer age and product category). The aim is to predict if a customer would recommend a product or not.
 
