@@ -1,10 +1,6 @@
-# README Template
-
-Below is a template provided for use when building your README file for students.
-
 # Project Title
 
-Project description goes here.
+In this project a machine learning model will analyze several data of a purchase (for example text of the review, customer age and product category). The aim is to predict if a customer would recommend a product or not.
 
 ## Getting Started
 
@@ -13,42 +9,75 @@ Instructions for how to get a copy of the project running on your local machine.
 ### Dependencies
 
 ```
-Examples here
+scikit-learn
+pandas
+spacy
+notebook
+torch
+transformers
 ```
 
 ### Installation
 
-Step by step explanation of how to get a dev environment running.
+#### Clone the github Repository
 
-List out the steps
+Go to a directory you prefer the project to be and run the following command
 
 ```
-Give an example here
+git clone https://github.com/dirkhradecky/dsnd-pipelines-project.git
 ```
+
+Then open the directory
+
+```
+cd dsnd-pipelines-project
+```
+
+#### Create project and environment
+
+A simple possibility to create a project and a virtual environment would be to use uv.
+
+If you don't have uv installed you can get infos about how to install it here: [Installing uv](https://docs.astral.sh/uv/getting-started/installation/)
+
+If uv is installed, first initialize a project with the following command
+
+```
+uv init
+```
+
+Then create a virtual environment with all the dependencies
+
+```
+uv sync
+```
+
+Alternatively you can, of course, use pip and the requirements.txt to install the necessary dependencies.
+
+You can find the Jupyter notebook in the 'starter' directory.
 
 ## Testing
 
-Explain the steps needed to run any automated tests
-
-### Break Down Tests
-
-Explain what each test does and why
-
-```
-Examples here
-```
+There are no tests needed for this project.
 
 ## Project Instructions
 
-This section should contain all the student deliverables for this project.
+In the notebook the following is done:
+
+- Loading and inspecting the data
+- Data Exploration
+- Building a full pipeline of:
+  - Preprocessing
+  - Feature Engineering
+  - Training
+- Fine-Tuning the model
 
 ## Built With
 
-* [Item1](www.item1.com) - Description of item
-* [Item2](www.item2.com) - Description of item
-* [Item3](www.item3.com) - Description of item
-
-Include all items used to build project.
+- scikit-learn
+- spaCy
+- Pytorch
+- pandas
+- transformers (Hugging Face)
 
 ## License
 
